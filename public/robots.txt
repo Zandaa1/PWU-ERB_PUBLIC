@@ -1,0 +1,60 @@
+# ==============================================================================
+# robots.txt for Example Research Institution Ethics Review Board (DEMO ERB)
+# Host: http://127.0.0.1:8000
+# ==============================================================================
+
+# Google Search Console & Google OAuth Verification Crawlers
+User-agent: Google-InspectionTool
+User-agent: Googlebot
+User-agent: GoogleOther
+Allow: /
+Allow: /privacy-policy
+Allow: /privacy
+Allow: /terms
+Allow: /faq
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /dashboard
+Disallow: /requests/
+Disallow: /auth/
+Disallow: /monitoring/
+Disallow: /developer
+Disallow: /livewire/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Allow: /privacy-policy
+Allow: /privacy
+Allow: /terms
+Allow: /faq
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /dashboard
+Disallow: /requests/
+Disallow: /auth/
+Disallow: /monitoring/
+Disallow: /developer
+Disallow: /livewire/
+
+# All other crawlers and user-agents
+User-agent: *
+Allow: /
+Allow: /privacy-policy
+Allow: /privacy
+Allow: /terms
+Allow: /faq
+Allow: /sitemap.xml
+
+# Protect internal authenticated workflows and API endpoints
+Disallow: /admin/
+Disallow: /dashboard
+Disallow: /requests/
+Disallow: /auth/
+Disallow: /monitoring/
+Disallow: /developer
+Disallow: /livewire/
+Disallow: /templates/
+
+# XML Sitemap declaration
+Sitemap: http://127.0.0.1:8000/sitemap.xml
